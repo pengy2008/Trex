@@ -125,9 +125,9 @@ function spawnClouds() {
   //write code here to spawn the clouds
   if (frameCount % 60 === 0) {
     var cloud = createSprite(600,120,40,10);
-    cloud.y = Math.round(random(80,120));
+    cloud.y = Math.round(random(80,160));
     cloud.addImage(cloudImage);
-    cloud.scale = 0.5;
+    cloud.scale = math.random(0.3,0.7);
     cloud.velocityX = -3;
     
      //assign lifetime to the variable
